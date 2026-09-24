@@ -16,5 +16,7 @@ ehthumbs_vista.db
 *.sublime-workspace
 *.sublime-project
 *.swp
-*.swo
-*~
+# Archives
+*.zip
+*.tar.gz
+
