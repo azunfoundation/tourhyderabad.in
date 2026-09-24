@@ -28,6 +28,11 @@ DirectoryIndex index.php index.html
 
     # Custom alias for Nizami Heritage Trail package
     RewriteRule ^packages/nizami-heritage/?$ package-nizami-heritage.php [L,QSA]
+
+    # Custom aliases for Kashmir 5N/6D package
+    RewriteRule ^packages/kashmir-5n-6d/?$ package-kashmir-5n-6d.php [L,QSA]
+    RewriteRule ^packages/kashmir-tour-package/?$ package-kashmir-5n-6d.php [L,QSA]
+    RewriteRule ^kashmir-tour-package/?$ package-kashmir-5n-6d.php [L,QSA]
 </IfModule>
 
 # 3. Enable Gzip / Brotli Compression

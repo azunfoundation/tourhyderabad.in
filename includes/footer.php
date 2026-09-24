@@ -36,6 +36,7 @@ $scallopColor = $footerScallopColor ?? 'var(--ivory)';
       <a href="packages.php">2 Days 1 Night</a>
       <a href="package-nizami-heritage.php">3 Days 2 Nights</a>
       <a href="packages.php">4 Days 3 Nights</a>
+      <a href="package-kashmir-5n-6d.php">5N / 6D Kashmir Special</a>
       <a href="packages.php">Half-Day Walks</a>
     </nav>
 

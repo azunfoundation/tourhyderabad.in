@@ -369,19 +369,27 @@
         showErr("enq-err", "Please add your name so we know who's travelling.");
         return;
       }
+      var phoneInput = document.getElementById("enq-phone");
+      var phone = phoneInput ? val("enq-phone") : "";
+      if (phoneInput && (!phone || !/^[0-9+\s-]{10,14}$/.test(phone))) {
+        showErr("enq-err", "Please enter a valid 10-digit phone number.");
+        return;
+      }
       showErr("enq-err", "");
 
       var date = val("enq-date");
       var pax = val("enq-pax");
-      var msg = "Hi! I'm " + name + ". I'm interested in the Nizami Heritage Trail (3D2N)." +
+      var pkg = sideBtn.getAttribute("data-package") || "Nizami Heritage Trail (3D2N)";
+      var msg = "Hi! I'm " + name + (phone ? " (" + phone + ")" : "") + ". I'm interested in the " + pkg + "." +
         (date ? " Travel date: " + date + "." : "") + " Travellers: " + pax + ". Please share details and pricing.";
       var waUrl = "https://wa.me/" + WA + "?text=" + encodeURIComponent(msg);
 
       postLead({
         name: name,
+        phone: phone,
         travel_date: date,
         travellers: pax,
-        package_name: "Nizami Heritage Trail (3D2N)",
+        package_name: pkg,
         message: "Sent from package sidebar"
       }, function () {
         window.open(waUrl, "_blank");

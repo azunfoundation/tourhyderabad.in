@@ -52,6 +52,7 @@ $footerScallopColor = 'var(--tint)';
           <label class="f">PACKAGE INTEREST
             <select id="c-pkg">
               <option>Not sure yet — advise me</option>
+              <option>Kashmir Tour Package (5N/6D - ₹10,999)</option>
               <option>Hyderabad City Darshan (1 Day)</option>
               <option>Pearl City Express (2D1N)</option>
               <option>Nizami Heritage Trail (3D2N)</option>

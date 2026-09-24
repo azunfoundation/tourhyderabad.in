@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Local Development Router for PHP Built-in Server
  * Emulates Apache mod_rewrite rules defined in .htaccess
@@ -18,6 +18,12 @@ $file = __DIR__ . $uri;
 // Custom alias for Nizami Heritage Trail package
 if (rtrim($uri, '/') === '/packages/nizami-heritage') {
     require __DIR__ . '/package-nizami-heritage.php';
+    exit;
+}
+
+// Custom aliases for Kashmir 5N/6D package
+if (in_array(rtrim($uri, '/'), ['/packages/kashmir-5n-6d', '/packages/kashmir-tour-package', '/kashmir-tour-package', '/kashmir-5n-6d'])) {
+    require __DIR__ . '/package-kashmir-5n-6d.php';
     exit;
 }
 

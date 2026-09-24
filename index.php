@@ -77,11 +77,32 @@ $footerScallopColor = 'var(--maroon)';
       <div data-reveal="1" class="sec-head">
         <span class="ghost" aria-hidden="true">01</span>
         <p class="eyebrow">CURATED PACKAGES</p>
-        <h2 class="t2">Six ways to see Hyderabad properly</h2>
+        <h2 class="t2">Curated journeys &amp; seasonal specials</h2>
         <div class="rule" aria-hidden="true"><span></span><span></span><span></span></div>
       </div>
 
       <div class="cards">
+        <!-- Card: Kashmir 5N/6D (Ad Featured) -->
+        <article data-reveal="1" class="ticket" style="box-shadow:0 12px 32px -18px rgba(92,26,36,.35)">
+          <div class="arch">
+            <img src="assets/images/kashmir-card.jpg" alt="Kashmir 5 Nights 6 Days Tour Package" loading="lazy" class="imgwarm" width="370" height="278">
+          </div>
+          <span class="stamp hot">5N · 6D — SPECIAL AD OFFER</span>
+          <div class="perf" aria-hidden="true"><i></i><i></i></div>
+          <div class="ticket-body">
+            <h3><a href="package-kashmir-5n-6d.php" style="color:var(--maroon)">Kashmir 5N / 6D Package</a></h3>
+            <p class="price">Starting @ ₹10,999 <small>· JAMMU TO JAMMU · PRIVATE CAR</small></p>
+            <ul class="incl">
+              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#B08A47" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>Jammu pickup &amp; drop, 4N Srinagar + 1N Pahalgam</li>
+              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#B08A47" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>Dal Lake, Sonamarg, Gulmarg, Doodhpathri &amp; Pahalgam</li>
+              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#B08A47" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>Dedicated private vehicle with fuel, tolls &amp; driver</li>
+            </ul>
+            <div class="stack">
+              <a href="package-kashmir-5n-6d.php" class="btn-fill">VIEW FULL ITINERARY</a>
+              <a href="<?= get_whatsapp_url("Hi! I'm interested in the Kashmir 5 Nights / 6 Days Tour Package (Jammu to Jammu @ ₹10,999). Please share details and pricing.") ?>" class="btn-line" target="_blank" rel="noopener">ENQUIRE ON WHATSAPP</a>
+            </div>
+          </div>
+        </article>
         <!-- Card 1 -->
         <article data-reveal="1" class="ticket">
           <div class="arch">

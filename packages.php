@@ -2,8 +2,8 @@
 require_once __DIR__ . '/includes/config.php';
 
 $currentPage = 'packages';
-$pageTitle = 'All Hyderabad Tour Packages — 1 Day to 5 Days | TourHyderabad.in';
-$pageDesc = 'Eight curated Hyderabad tour packages: City Darshan, Nizami Heritage Trail, Ramoji Film City, Old City food walks. Honest local pricing, customized for you.';
+$pageTitle = 'All Tour Packages — Hyderabad & Kashmir 5N/6D | TourHyderabad.in';
+$pageDesc = 'Curated tour packages: Kashmir 5N/6D Special, Nizami Heritage Trail, City Darshan, Ramoji Film City, Old City food walks. Honest pricing, customized for you.';
 $canonicalUrl = get_base_url() . '/packages.php';
 $footerScallopColor = 'var(--ivory)';
 ?>
@@ -21,8 +21,8 @@ $footerScallopColor = 'var(--ivory)';
   <section class="page-head jaali-dark" data-screen-label="Page header">
     <div class="wrap">
       <p class="eyebrow">TOUR PACKAGES</p>
-      <h1>Eight journeys, one city of pearls</h1>
-      <p class="lead">From a half-day food walk in the Old City to four unhurried days across the Deccan — every package below is a starting point we'll reshape around your dates.</p>
+      <h1>Handcrafted journeys, honestly priced</h1>
+      <p class="lead">From a half-day Old City food walk to six unforgettable days across Kashmir — every package below is a starting point we'll reshape around your dates.</p>
       <div class="rule" aria-hidden="true"><span></span><span></span><span></span></div>
     </div>
   </section>
@@ -32,6 +32,7 @@ $footerScallopColor = 'var(--ivory)';
     <!-- Filter Toolbar -->
     <div class="filters" role="toolbar" aria-label="Filter packages by duration">
       <button type="button" class="seg" data-filter="All" aria-pressed="true">All</button>
+      <button type="button" class="seg" data-filter="5N6D" aria-pressed="false">5N/6D Kashmir</button>
       <button type="button" class="seg" data-filter="Half Day" aria-pressed="false">Half Day</button>
       <button type="button" class="seg" data-filter="1 Day" aria-pressed="false">1 Day</button>
       <button type="button" class="seg" data-filter="2 Days" aria-pressed="false">2 Days</button>
@@ -42,6 +43,27 @@ $footerScallopColor = 'var(--ivory)';
 
     <!-- Package Cards Grid -->
     <div class="cards" id="pkg-grid">
+      <!-- Package: Kashmir 5N/6D Special (Ad Featured) -->
+      <article class="ticket" data-cat="5N6D" style="box-shadow:0 12px 32px -18px rgba(92,26,36,.35)">
+        <div class="arch">
+          <img src="assets/images/kashmir-card.jpg" alt="Snow clad mountains and green valleys of Kashmir" loading="lazy" class="imgwarm" width="370" height="278">
+        </div>
+        <span class="stamp hot">5N · 6D — SPECIAL AD OFFER</span>
+        <div class="perf" aria-hidden="true"><i></i><i></i></div>
+        <div class="ticket-body">
+          <h2 style="margin:0;font-family:var(--serif);font-weight:700;font-size:25px;color:var(--maroon);line-height:1.15">Kashmir 5N / 6D Tour Package</h2>
+          <p class="price">Starting @ ₹10,999 <small>· JAMMU TO JAMMU · PRIVATE CAR</small></p>
+          <ul class="incl">
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#B08A47" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Jammu pickup &amp; drop, 4N Srinagar + 1N Pahalgam</span></li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#B08A47" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Dal Lake, Sonamarg, Gulmarg, Doodhpathri &amp; Pahalgam</span></li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#B08A47" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Dedicated private vehicle with driver, fuel &amp; tolls included</span></li>
+          </ul>
+          <div class="stack">
+            <a href="package-kashmir-5n-6d.php" class="btn-fill">VIEW FULL ITINERARY</a>
+            <a href="<?= get_whatsapp_url("Hi! I'm interested in the Kashmir 5 Nights / 6 Days Tour Package (Jammu to Jammu @ ₹10,999). Please share details and pricing.") ?>" class="btn-line" target="_blank" rel="noopener">ENQUIRE ON WHATSAPP</a>
+          </div>
+        </div>
+      </article>
       <!-- Package 1 -->
       <article class="ticket" data-cat="1 Day|City Tours">
         <div class="arch">
